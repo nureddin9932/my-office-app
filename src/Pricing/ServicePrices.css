@@ -1,0 +1,67 @@
+.service-prices {
+  background: linear-gradient(135deg, #1c1f2e, #0f1122);
+  color: #f5d67a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.service-prices h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-shadow: 0 0 10px #f5d67a;
+}
+
+.service-prices p {
+  color: #f5d67a;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.price-box {
+  background: #0b0f1a;
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.price-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5);
+}
+
+.price-box h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #f5d67a;
+}
+
+.price-box p {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 12px;
+  font-weight: bold;
+}
+
+.price-box small {
+  font-size: 14px;
+  color: #ddd;
+}
+
+@media (max-width: 576px) {
+  .service-prices h2 {
+    font-size: 28px;
+  }
+  .service-prices p {
+    font-size: 14px;
+  }
+}

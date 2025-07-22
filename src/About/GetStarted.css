@@ -1,0 +1,103 @@
+.get-started {
+  background: linear-gradient(135deg, #000, #0b0f1a);
+  color: #f5d67a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.get-started .section-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-shadow: 0 0 10px #f5d67a;
+}
+
+.get-started .section-subtitle {
+  color: #ddd;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.get-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.get-card {
+  background: #0d0d0d;
+  padding: 24px;
+  border-radius: 16px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.get-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(245, 214, 122, 0.3);
+}
+
+.get-icon {
+  font-size: 36px;
+  color: #f5d67a;
+  margin-bottom: 16px;
+}
+
+.get-icon.orange {
+  color: #e74c3c;
+}
+
+.get-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.get-card p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.get-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.get-actions .btn {
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.get-actions .btn.yellow {
+  background: #f5d67a;
+  color: black;
+}
+
+.get-actions .btn.yellow:hover {
+  background: #d4b653;
+}
+
+.get-actions .btn.orange {
+  background: #e74c3c;
+  color: white;
+}
+
+.get-actions .btn.orange:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .get-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

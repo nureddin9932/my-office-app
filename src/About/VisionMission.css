@@ -1,0 +1,61 @@
+.vision-mission {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0a1b2a, #0a1b2a);
+  color: #f5d67a;
+  flex-wrap: wrap;
+}
+
+.vm-card {
+  background: #10202e;
+  padding: 32px;
+  border-radius: 16px;
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid transparent;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.2);
+}
+
+.vm-card.highlighted {
+  border: 1px solid #e74c3c;
+}
+
+.icon {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.icon.golden {
+  color: #f5d67a;
+}
+
+.icon.orange {
+  color: #e74c3c;
+}
+
+.vm-card h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #f5d67a;
+}
+
+.vm-card p {
+  color: #ddd;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vision-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+}

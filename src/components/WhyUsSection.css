@@ -1,0 +1,127 @@
+.whyus {
+  background: linear-gradient(135deg, #0b0f1a, #0a0e2a);
+  color: #f5d67a;
+  padding: 80px 20px;
+}
+
+.whyus-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.whyus-content {
+  flex: 1 1 500px;
+}
+
+.whyus-content h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+  text-shadow: 0 0 10px #f5d67a;
+}
+
+.whyus-content p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: #f5d67a;
+}
+
+.whyus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.whyus-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.whyus-list svg {
+  color: #28a745;
+}
+
+.whyus-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whyus-btn:hover {
+  background: #c0392b;
+}
+
+/* Card Styles */
+.whyus-card {
+  background: linear-gradient(135deg, #1c1f2e, #0f1122);
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  flex: 1 1 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.whyus-card h3 {
+  font-size: 24px;
+  margin: 16px 0 8px;
+}
+
+.whyus-card .stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  color: #f5d67a;
+  margin: 8px 0;
+}
+
+.whyus-star {
+  font-size: 48px;
+  color: #f5d67a;
+}
+
+.whyus-card .rate {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.whyus-card .reviews p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.whyus-card .reviews span {
+  display: block;
+  color: #f5d67a;
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whyus-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whyus-content {
+    flex: 1 1 100%;
+  }
+
+  .whyus-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+.pricing-header {
+  background: linear-gradient(135deg, #000, #0a0e2a, #1c2a47);
+  color: #f5d67a;
+  text-align: center;
+  padding: 80px 20px 40px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.pricing-header h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 12px #f5d67a;
+  margin-bottom: 16px;
+}
+
+.pricing-header p {
+  color: #f5d67a;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* دوائر خلفية */
+.pricing-header::before,
+.pricing-header::after {
+  content: '';
+  position: absolute;
+  background: rgba(245, 214, 122, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.pricing-header::before {
+  width: 120px;
+  height: 120px;
+  top: 20px;
+  left: 50px;
+}
+
+.pricing-header::after {
+  width: 80px;
+  height: 80px;
+  top: 30px;
+  right: 80px;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .pricing-header h2 {
+    font-size: 32px;
+  }
+
+  .pricing-header p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,50 @@
+.choose-plan {
+  background: linear-gradient(135deg, #0b0f1a, #000);
+  color: #f5d67a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.choose-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-shadow: 0 0 10px #f5d67a;
+}
+
+.choose-subtitle {
+  margin-bottom: 32px;
+  color: #f5d67a;
+}
+
+.choose-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.btn.yellow {
+  background: linear-gradient(90deg, #f5d67a, #d4b653);
+  color: #000;
+}
+
+.btn.red {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px #f5d67a;
+}

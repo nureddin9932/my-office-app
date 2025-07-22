@@ -1,0 +1,41 @@
+.contact-header {
+  background: linear-gradient(135deg, #0b0f1a, #0a0e2a);
+  color: #f5d67a;
+  padding: 80px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-shadow: 0 0 10px #f5d67a;
+}
+
+.contact-subtitle {
+  color: #ddd;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}

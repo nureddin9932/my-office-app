@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: 'Cairo', sans-serif;
+  background: #fff;
+}
+
+/* Navbar Main */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0b0f1a;
+  color: #f5d67a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Navigation Links */
+.menu {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  align-items: center;
+}
+
+.menu a {
+  color: #f5d67a;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: all 0.3s;
+}
+
+.menu a:hover {
+  color: #d4b653;  /* لون ذهبي أغمق */
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #d4b653;
+  transition: all 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Call To Action Button */
+.cta-button {
+  background-color: #f5d67a;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d4b653;  /* أغمق عند التمرير */
+}
+
+/* Burger Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #f5d67a;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40%;
+    background-color: #0b0f1a;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu.open {
+    transform: translateX(0);
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 600px) and (max-width: 768px) {
+  .menu {
+    width: 40%;
+  }
+}

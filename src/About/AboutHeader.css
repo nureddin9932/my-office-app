@@ -1,0 +1,55 @@
+.about-header {
+  background: linear-gradient(135deg, #000, #1a2a40);
+  color: #f5d67a;
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(245, 214, 122, 0.8);
+  margin-bottom: 16px;
+  transition: transform 0.3s;
+}
+
+.about-title:hover {
+  transform: scale(1.05);
+}
+
+.about-subtitle {
+  color: #ddd;
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  transition: color 0.3s;
+}
+
+.about-subtitle:hover {
+  color: #fff;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-subtitle {
+    font-size: 16px;
+  }
+}

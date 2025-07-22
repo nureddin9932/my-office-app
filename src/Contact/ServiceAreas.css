@@ -1,0 +1,85 @@
+.service-areas {
+  background: linear-gradient(135deg, #0b0f1a, #0a1b2a);
+  color: #f5d67a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.service-areas h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  text-shadow: 0 0 8px rgba(245, 214, 122, 0.8);
+}
+
+.service-areas p {
+  color: #ddd;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.area-card {
+  background: #0d0d0d;
+  padding: 32px 24px;
+  border-radius: 16px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(245, 214, 122, 0.3);
+}
+
+.area-card svg {
+  color: #f5d67a;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.area-card h3 {
+  margin: 12px 0;
+  font-size: 20px;
+  color: #f5d67a;
+}
+
+.area-card p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* زر المدينة */
+.area-badge {
+  background: #0d6efd;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.area-badge.orange {
+  background: #e74c3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-areas h2 {
+    font-size: 28px;
+  }
+
+  .service-areas p {
+    font-size: 16px;
+  }
+}
